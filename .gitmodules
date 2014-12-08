@@ -1,3 +1,6 @@
 [submodule "vendor/angelleye/paypal-php-library"]
 	path = vendor/angelleye/paypal-php-library
 	url = https://github.com/angelleye/paypal-php-library.git
+[submodule "vendor/twbs/bootstrap"]
+	path = vendor/twbs/bootstrap
+	url = https://github.com/twbs/bootstrap.git
