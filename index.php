@@ -108,7 +108,7 @@
                                 Digital Goods
                             </h4>
                             <p>
-                                Learn how to implement digital goods (micro-processing rates) into PayPal Express Checkout.  This includes the option
+                                Learn how to implement digital goods (micro-processing rates) into PayPal Express Checkout.  This includes the option for embedded payments.
                             </p>
                             <p>
                                 <a class="btn btn-primary" href="#">Demo</a> <a class="btn btn-info" href="#">Tutorial</a>
