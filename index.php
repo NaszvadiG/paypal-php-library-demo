@@ -20,11 +20,11 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/images/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/images/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/images/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/assets/images/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="/assets/images/favicon.png">
 
     <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
@@ -48,9 +48,9 @@
                 </div>
             </div>
             <div class="jumbotron well">
-                <h1>
-                    PayPal PHP Class Library Demo
-                </h1>
+                <h2>
+                    PayPal PHP Class Library Demo / Tutorials
+                </h2>
                 <p>
                     This is a collection of small demo apps for a variety of PayPal checkout flows using our class library.
                 </p>
@@ -64,8 +64,11 @@
                         <img alt="PayPal Express Checkout Basic Integration" src="/assets/images/paypal-express-checkout.jpg">
                         <div class="caption">
                             <h3>
-                                Express Checkout Basic
+                                Express Checkout
                             </h3>
+                            <h4>
+                                Basic
+                            </h4>
                             <p>
                                 Take a look at a basic Express Checkout experience and then study the code to see how it's done!
                             </p>
@@ -77,13 +80,16 @@
                 </div>
                 <div class="col-md-4">
                     <div class="thumbnail">
-                        <img alt="300x200" src="http://lorempixel.com/600/200/city">
+                        <img alt="PayPal Express Checkout Line Items Integration" src="/assets/images/paypal-express-checkout-with-line-items.jpg">
                         <div class="caption">
                             <h3>
-                                Thumbnail label
+                                Express Checkout
                             </h3>
+                            <h4>
+                                w/ Line Items
+                            </h4>
                             <p>
-                                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                This expands on our basic Express Checkout demo to add individual order items to the API requests so that the data is available within PayPal's transaction details.
                             </p>
                             <p>
                                 <a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
@@ -93,13 +99,16 @@
                 </div>
                 <div class="col-md-4">
                     <div class="thumbnail">
-                        <img alt="300x200" src="http://lorempixel.com/600/200/sports">
+                        <img alt="PayPal Express Checkout Digital Goods Integration" src="/assets/images/paypal-express-checkout-digital-goods.jpg">
                         <div class="caption">
                             <h3>
-                                Thumbnail label
+                                Express Checkout
                             </h3>
+                            <h4>
+                                Digital Goods
+                            </h4>
                             <p>
-                                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                Learn how to implement digital goods (micro-processing rates) into PayPal Express Checkout.  This includes the option
                             </p>
                             <p>
                                 <a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
