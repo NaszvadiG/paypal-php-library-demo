@@ -1,0 +1,3 @@
+[submodule "vendor/angelleye/paypal-php-library"]
+	path = vendor/angelleye/paypal-php-library
+	url = https://github.com/angelleye/paypal-php-library.git
