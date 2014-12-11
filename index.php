@@ -73,7 +73,7 @@
                                 Take a look at a basic Express Checkout experience and then study the code to see how it's done!
                             </p>
                             <p>
-                                <a class="btn btn-primary" href="#">Demo</a> <a class="btn btn-info" href="#">Tutorial</a>
+                                <a class="btn btn-primary" href="#">Demo</a> <a class="btn btn-info" href="#">Download Sample Code</a>
                             </p>
                         </div>
                     </div>
@@ -92,7 +92,7 @@
                                 This expands on our basic Express Checkout demo to add individual order items to the API requests so that the data is available within PayPal's transaction details.
                             </p>
                             <p>
-                                <a class="btn btn-primary" href="#">Demo</a> <a class="btn btn-info" href="#">Tutorial</a>
+                                <a class="btn btn-primary" href="#">Demo</a> <a class="btn btn-info" href="#">Download Sample Code</a>
                             </p>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                                 Learn how to implement digital goods (micro-processing rates) into PayPal Express Checkout.  This includes the option for embedded payments.
                             </p>
                             <p>
-                                <a class="btn btn-primary" href="#">Demo</a> <a class="btn btn-info" href="#">Tutorial</a>
+                                <a class="btn btn-primary" href="#">Demo</a> <a class="btn btn-info" href="#">Download Sample Code</a>
                             </p>
                         </div>
                     </div>
