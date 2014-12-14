@@ -1,4 +1,9 @@
 <?php
+if(!session_id())
+{
+	header('Location: /');
+	exit();	
+}
 require_once($_SERVER['DOCUMENT_ROOT'].'/includes/config.php');
 ?>
 <html lang="en">
@@ -45,9 +50,10 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/includes/config.php');
           <div id="paypal_partner_logo"> <img alt="PayPal Partner and Certified Developer" src="/assets/images/paypal-partner-logo.png"/> </div>
         </div>
       </div>
-      <h2>Payment Complete!</h2>
+      <h2 align="center">Payment Complete!</h2>
       <p class="bg-info">
-      	We have now reached the final thank you / receipt page and the payment has been processed!
+      	We have now reached the final thank you / receipt page and the payment has been processed!  We have added the PayPal transaction ID 
+        to the Billing Information, which was provided in the DoExpressCheckoutPayment response.
       </p>
       <table class="table table-bordered">
         <thead>
