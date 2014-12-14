@@ -45,8 +45,12 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/includes/config.php');
           <div id="paypal_partner_logo"> <img alt="PayPal Partner and Certified Developer" src="/assets/images/paypal-partner-logo.png"/> </div>
         </div>
       </div>
-      <p class="bg-info">Here we display a final review to the buyer now that we've calculated shipping, handling, and tax.  The payment 
-      has not been processed at this point because we have not yet called the final DoExpressCheckoutPayment API. That is what will 
+      <h2 align="center">Order Review</h2>
+      <p class="bg-info">Here we display a final review to the buyer now that we've calculated shipping, handling, and tax.  The 
+      billing and shipping information provided here is what we obtained in the GetExpressCheckoutDetails response.
+      </p>
+      <p class="bg-info">
+      The payment has not been processed at this point because we have not yet called the final DoExpressCheckoutPayment API. That is what will 
       happen when we click the "Complete Order" button below.
       </p>
       <table class="table table-bordered">
