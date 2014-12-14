@@ -72,9 +72,13 @@ $_SESSION['shopping_cart']['grand_total'] = number_format($_SESSION['shopping_ca
           <div id="paypal_partner_logo"> <img alt="PayPal Partner and Certified Developer" src="/assets/images/paypal-partner-logo.png"/> </div>
         </div>
       </div>
+      <h2 align="center">Shopping Cart</h2>
       <p class="bg-info">Here we are using a basic shopping cart for display purposes, and we are assuming that we have not collected any 
       billing or shipping information from the buyer yet because we'll be obtaining those details from PayPal 
-      after the user logs in and is returned back to the site.
+      after the user logs in and is returned back to the site.</p>
+      <p class="bg-info">To complete the demo, click the Checkout with PayPal button and use the following credentials to login to PayPal.<br /><br />
+      Email Address:  paypalphp@angelleye.com<br />
+      Password:  PayPalPHPDemo
       </p>
       <table class="table table-bordered">
         <thead>
