@@ -45,7 +45,7 @@
       <div class="jumbotron well">
         <h2> PayPal PHP Class Library Demo / Sample Code</h2>
         <p> This is a collection of small demo apps for a variety of PayPal checkout flows using our class library. </p>
-        <p> <a class="btn btn-primary btn-large" href="https://github.com/angelleye/paypal-php-library">Download PayPal Library from GitHub</a> </p>
+        <p> <a class="btn btn-primary btn-large" href="https://github.com/angelleye/paypal-php-library" target="_blank">Download PayPal Library from GitHub</a> </p>
       </div>
       <div class="row">
         <div class="col-md-4">
