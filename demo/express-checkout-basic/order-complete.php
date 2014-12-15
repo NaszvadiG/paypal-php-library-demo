@@ -4,7 +4,7 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/includes/config.php');
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>PayPal Express Checkout Demo | PHP Class Library | Angell EYE</title>
+<title>PayPal Express Checkout Basic Demo | Order Complete | PHP Class Library | Angell EYE</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 <meta name="author" content="">
