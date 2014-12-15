@@ -48,7 +48,7 @@
         <p> <a class="btn btn-primary btn-large" href="https://github.com/angelleye/paypal-php-library" target="_blank">View PayPal Library on GitHub</a> </p>
       </div>
       <p class="bg-info"><strong>Sample Code Info</strong><br>
-The sample code provided by the download buttons is pulled straight from this site. All paths to CSS, JS, etc. are setup relative to the site root, so if you are setting up a demo on your own server it is best to use a virtual host so that you can drop the demo files into the site root of your test server.</p>
+The sample code provided by the download buttons is pulled straight from this site. All paths to CSS, JS, etc. are setup relative to the site root, so if you are setting up a demo on your own server it is best to use a virtual host so that you can drop the demo files into the site root of your test server. We <a href="http://www.angelleye.com/product/training/">offer training for this sort of thing</a> if you are unsure how to handle this.</p>
       <div class="row">
         <div class="col-md-4">
           <div class="thumbnail"> <img alt="PayPal Express Checkout Basic Integration" src="/assets/images/paypal-express-checkout.jpg">
