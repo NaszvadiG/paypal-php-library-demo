@@ -78,7 +78,7 @@ $_SESSION['shopping_cart']['grand_total'] = number_format($_SESSION['shopping_ca
       after the user logs in and is returned back to the site.</p>
       <p class="bg-info">To complete the demo, click the Checkout with PayPal button and use the following credentials to login to PayPal.<br /><br />
       Email Address:  paypalphp@angelleye.com<br />
-      Password:  PayPalPHPDemo
+      Password:  paypalphp
       </p>
       <table class="table table-bordered">
         <thead>
