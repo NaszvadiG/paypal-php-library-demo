@@ -65,7 +65,7 @@ The sample code provided by the download buttons is pulled straight from this si
             <div class="caption">
               <h3> Express Checkout </h3>
               <h4> w/ Line Items </h4>
-              <p> Here we expand on our basic Express Checkout demo to add individual order items to the API requests so that the data is available within PayPal's transaction details. </p>
+              <p> Here we expand on our basic Express Checkout demo to add individual order items to the API requests so that the data is available within PayPal's checkout review pages transaction details. </p>
               <p> <a class="btn btn-primary" href="demo/express-checkout-line-items/">Demo</a> <a class="btn btn-info" href="download/paypal-php-express-checkout-line-items-demo.zip">Download Sample Code</a> </p>
             </div>
           </div>
