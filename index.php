@@ -55,7 +55,7 @@ The sample code provided by the download buttons is pulled straight from this si
             <div class="caption">
               <h3> Express Checkout </h3>
               <h4> Basic </h4>
-              <p> Take a look at a basic Express Checkout experience and then study the code to see how it's done! </p>
+              <p> PayPal Express Checkout at its most basic state. Here we are simply passing an amount and mimimal details to PayPal for payment.</p>
               <p> <a class="btn btn-primary" href="demo/express-checkout-basic/index.php">Demo</a> <a class="btn btn-info" href="#">Download Sample Code</a> </p>
             </div>
           </div>
@@ -65,7 +65,7 @@ The sample code provided by the download buttons is pulled straight from this si
             <div class="caption">
               <h3> Express Checkout </h3>
               <h4> w/ Line Items </h4>
-              <p> This expands on our basic Express Checkout demo to add individual order items to the API requests so that the data is available within PayPal's transaction details. </p>
+              <p> Here we expand on our basic Express Checkout demo to add individual order items to the API requests so that the data is available within PayPal's transaction details. </p>
               <p> <a class="btn btn-primary" href="#">Demo</a> <a class="btn btn-info" href="#">Download Sample Code</a> </p>
             </div>
           </div>
