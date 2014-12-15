@@ -30,8 +30,8 @@ $PayPal = new angelleye\PayPal\PayPal($PayPalConfig);
  */
 $SECFields = array(
 					'maxamt' => round($_SESSION['shopping_cart']['grand_total'] * 2,2), 					// The expected maximum total amount the order will be, including S&H and sales tax.
-					'returnurl' => $domain . 'demo/express-checkout-basic/GetExpressCheckoutDetails.php', 							    // Required.  URL to which the customer will be returned after returning from PayPal.  2048 char max.
-					'cancelurl' => $domain . 'demo/express-checkout-basic/', 							    // Required.  URL to which the customer will be returned if they cancel payment on PayPal's site.
+					'returnurl' => $domain . 'demo/express-checkout-line-items/GetExpressCheckoutDetails.php', 							    // Required.  URL to which the customer will be returned after returning from PayPal.  2048 char max.
+					'cancelurl' => $domain . 'demo/express-checkout-line-items/', 							    // Required.  URL to which the customer will be returned if they cancel payment on PayPal's site.
 					'hdrimg' => 'https://www.angelleye.com/images/angelleye-paypal-header-750x90.jpg', 			// URL for the image displayed as the header during checkout.  Max size of 750x90.  Should be stored on an https:// server or you'll get a warning message in the browser.
 					'logoimg' => 'https://www.angelleye.com/images/angelleye-logo-190x60.jpg', 					// A URL to your logo image.  Formats:  .gif, .jpg, .png.  190x60.  PayPal places your logo image at the top of the cart review area.  This logo needs to be stored on a https:// server.
 					'brandname' => 'Angell EYE', 							                                // A label that overrides the business name in the PayPal account on the PayPal hosted checkout pages.  127 char max.
@@ -48,13 +48,36 @@ $SECFields = array(
  * but we still have to populate $Payments with a single $Payment array.
  *
  * Once again, the template file includes a lot more available parameters,
- * but for this basic sample we've removed everything that we're not using,
- * so all we have is an amount.
+ * but for this line items sample we've removed everything that we're not using.
  */
 $Payments = array();
 $Payment = array(
     'amt' => $_SESSION['shopping_cart']['grand_total'], 	// Required.  The total cost of the transaction to the customer.  If shipping cost and tax charges are known, include them in this value.  If not, this value should be the current sub-total of the order.
+	'itemamt' => $_SESSION['shopping_cart']['subtotal'], 	// Required if you specify itemized L_AMT fields. Sum of cost of all items in this order.
 );
+
+/**
+ * Here we'll begin creating our order items that belong to this $Payment in the request.
+ * We will loop through the items in our shopping cart to add them each into our
+ * $Payment.
+ */
+$PaymentOrderItems = array();
+foreach($_SESSION['shopping_cart']['items'] as $cart_item)
+{
+	$Item = array(
+		'name' => $cart_item['name'], 							// Item name. 127 char max.
+		'amt' => $cart_item['price'], 							// Cost of item.
+		'number' => $cart_item['id'], 							// Item number.  127 char max.
+		'qty' => $cart_item['qty'], 							// Item qty on order.  Any positive integer.
+	);
+	array_push($PaymentOrderItems, $Item);
+}
+
+/**
+ * Now that $PaymentOrderItems is filled with all of our shopping cart items,
+ * we'll add that to our $Payment array.
+ */
+$Payment['order_items'] = $PaymentOrderItems;
 
 /**
  * Here we push our single $Payment into our $Payments array.

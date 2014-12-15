@@ -63,6 +63,29 @@ $Payment = array(
 );
 
 /**
+ * Here we'll begin creating our order items that belong to this $Payment in the request.
+ * We will loop through the items in our shopping cart to add them each into our
+ * $Payment.
+ */
+$PaymentOrderItems = array();
+foreach($_SESSION['shopping_cart']['items'] as $cart_item)
+{
+    $Item = array(
+        'name' => $cart_item['name'], 							// Item name. 127 char max.
+        'amt' => $cart_item['price'], 							// Cost of item.
+        'number' => $cart_item['id'], 							// Item number.  127 char max.
+        'qty' => $cart_item['qty'], 							// Item qty on order.  Any positive integer.
+    );
+    array_push($PaymentOrderItems, $Item);
+}
+
+/**
+ * Now that $PaymentOrderItems is filled with all of our shopping cart items,
+ * we'll add that to our $Payment array.
+ */
+$Payment['order_items'] = $PaymentOrderItems;
+
+/**
  * Here we push our single $Payment into our $Payments array.
  */
 array_push($Payments, $Payment);
