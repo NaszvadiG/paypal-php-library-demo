@@ -45,8 +45,10 @@
       <div class="jumbotron well">
         <h2> PayPal PHP Class Library Demo / Sample Code</h2>
         <p> This is a collection of small demo apps for a variety of PayPal checkout flows using our class library. </p>
-        <p> <a class="btn btn-primary btn-large" href="https://github.com/angelleye/paypal-php-library" target="_blank">Download PayPal Library from GitHub</a> </p>
+        <p> <a class="btn btn-primary btn-large" href="https://github.com/angelleye/paypal-php-library" target="_blank">View PayPal Library on GitHub</a> </p>
       </div>
+      <p class="bg-info"><strong>Sample Code Info</strong><br>
+The sample code provided by the download buttons is pulled straight from this site. All paths to CSS, JS, etc. are setup relative to the site root, so if you are setting up a demo on your own server it is best to use a virtual host so that you can drop the demo files into the site root of your test server.</p>
       <div class="row">
         <div class="col-md-4">
           <div class="thumbnail"> <img alt="PayPal Express Checkout Basic Integration" src="/assets/images/paypal-express-checkout.jpg">
