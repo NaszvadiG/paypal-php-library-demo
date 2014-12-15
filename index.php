@@ -55,7 +55,7 @@ The sample code provided by the download buttons is pulled straight from this si
             <div class="caption">
               <h3> Express Checkout </h3>
               <h4> Basic </h4>
-              <p> PayPal Express Checkout at its most basic state. Here we are simply passing an amount and mimimal details to PayPal for payment.</p>
+              <p>Here we are integrating Express Checkout without any line item details or any extra features. We obtain the user's shipping information so that we can calculate shipping and tax, but otherwise no additional data is included with this checkout demo.</p>
               <p> <a class="btn btn-primary" href="demo/express-checkout-basic/">Demo</a> <a class="btn btn-info" href="download/paypal-php-express-checkout-basic-demo.zip">Download Sample Code</a> </p>
             </div>
           </div>
