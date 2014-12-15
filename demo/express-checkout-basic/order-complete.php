@@ -1,9 +1,4 @@
 <?php
-if(!session_id())
-{
-	header('Location: /');
-	exit();	
-}
 require_once($_SERVER['DOCUMENT_ROOT'].'/includes/config.php');
 ?>
 <html lang="en">
