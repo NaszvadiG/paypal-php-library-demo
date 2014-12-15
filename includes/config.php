@@ -13,18 +13,13 @@ if(!session_id()) session_start();
 
 /** 
  * Sandbox Mode - TRUE/FALSE
- * Check the domain of the current page and set $sandbox accordingly.
- * This allows you to automatically use Sandbox or Live credentials throughout 
- * your application based on what server the app is running from.
- * 
- * I like to do this so I don't forget to update Sandbox credentials to Live
- * prior to uploading files to a production server.
- * 
- * In this case, it's checking to see if the current URL is http://paypal.angelleye.*
- * If so, $sandbox is true and the PayPal sandbox will be used throughout.  If not, 
- * we'll assume it must be a live transaction and will use live credentials throughout.
+ *
+ * Here we are setting the $sandbox field to TRUE so that all calls made
+ * by the demo scripts will hit the PayPal sandbox servers.
+ *
+ * We are also setting a $domain value so that we can easily create
+ * our ReturnURL, CancelURL, etc. within our API calls.
  */
-$host_split = explode('.',$_SERVER['HTTP_HOST']);
 $sandbox = TRUE;
 $domain = $sandbox ? 'http://paypalphp-sandbox.angelleye.com/' : 'http://paypalphp.angelleye.com/';
 
@@ -54,7 +49,7 @@ $api_version = '119.0';
  *
  * We're using shorthand if/else statements here to set both Sandbox and Production values.
  * Your sandbox values go on the left and your live values go on the right.
- * The sandbox value included here is a global value provided for developrs to use in the PayPal sandbox.
+ * The sandbox value included here is a global value provided for developers to use in the PayPal sandbox.
  */
 $application_id = $sandbox ? 'APP-80W284485P519543T' : '';	// Only required for Adaptive Payments.  You get your Live ID when your application is approved by PayPal.
 
@@ -62,7 +57,7 @@ $application_id = $sandbox ? 'APP-80W284485P519543T' : '';	// Only required for 
  * PayPal Developer Account Email Address
  * This is the email address that you use to sign in to http://developer.paypal.com
  */
-$developer_account_email = 'andrew@angelleye.com';		// This is what you use to sign in to http://developer.paypal.com.  Only required for Adaptive Payments.
+$developer_account_email = '';		// This is what you use to sign in to http://developer.paypal.com.  Only required for Adaptive Payments.
 
 /**
  * PayPal Gateway API Credentials
@@ -95,26 +90,6 @@ $payflow_username = $sandbox ? 'tester' : 'LIVE_PAYFLOW_USERNAME';
 $payflow_password = $sandbox ? 'Pr0t3ct!' : 'LIVE_PAYFLOW_PASSWORD';
 $payflow_vendor = $sandbox ? 'angelleye' : 'LIVE_PAYFLOW_VENDOR';
 $payflow_partner = $sandbox ? 'PayPal' : 'LIVE_PAYFLOW_PARTNER';
-
-/**
- * PayPal REST API Credentials
- * ---------------------------
- * These are the API credentials used for the PayPal REST API.
- * These are used any time you're working with the REST API child class.
- * 
- * You may obtain these credentials from within your account at http://developer.paypal.com
- */
-$rest_client_id = $sandbox ? 'AVk_9RBKzJQOXHJpP2lrg5nRMzt745yAxCgSS82UYMrP5WuiZV8K7q1HmPwW' : 'LIVE_CLIENT_ID';
-$rest_client_secret = $sandbox ? 'EPz3ZBDxJgw6OASB-CoevfidE9xYyMWOZ_4Pc5VDeiPl_PMAI8akx0dFFsZK' : 'LIVE_SECRET_ID';
-
-/**
- * PayPal Finance Portal API
- * -------------------------
- * These are credentials used for obtaining a PublisherID used in Bill Me Later Banner code.
- * As of now, these are specialized API's and you must obtain credentials directly from a PayPal rep.
- */
-$finance_access_key = $sandbox ? 'f218a0faa71181e83a7fcb44a02b6915f0dfa0b9' : 'f218a0faa71181e83a7fcb44a02b6915f0dfa0b9';
-$finance_client_secret = $sandbox ? 'a63b945a16745941dd3f119b3bfa3a55d161d09b' : 'a63b945a16745941dd3f119b3bfa3a55d161d09b';
 
 /**
  * Third Party User Values
