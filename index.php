@@ -76,7 +76,7 @@ The sample code provided by the download buttons is pulled straight from this si
               <h3> Express Checkout </h3>
               <h4> Digital Goods </h4>
               <p> Learn how to implement digital goods (micro-processing rates) into PayPal Express Checkout.  This includes the option for embedded payments. </p>
-              <p> <a class="btn btn-primary" href="#">Demo</a> <a class="btn btn-info" href="#">Download Sample Code</a> </p>
+              <p> <a class="btn btn-primary" href="demo/express-checkout-digital-goods/">Demo</a> <a class="btn btn-info" href="download/paypal-php-express-checkout-digital-goods-demo.zip">Download Sample Code</a> </p>
             </div>
           </div>
         </div>
