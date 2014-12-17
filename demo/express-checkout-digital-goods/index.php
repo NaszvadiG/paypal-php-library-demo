@@ -148,6 +148,14 @@ $_SESSION['shopping_cart']['grand_total'] = number_format($_SESSION['shopping_ca
 /**
  * Here we are adding the PayPal javascript
  * that helps us drive the Digital Goods experience.
+ *
+ * expType has 3 options:
+ * - instant - DG flow in lightbox, with overlay mask
+ * - mini - DG flow in mini-browser with overlay mask.
+ * - popup - DG flow in mini-browser.
+ *
+ * PayPal recommends the instant option.
+ * Leaving extType blank will default to the legacy DG flow.
  */
 ?>
 <script src='https://www.paypalobjects.com/js/external/dg.js' type='text/javascript'></script>
@@ -155,7 +163,7 @@ $_SESSION['shopping_cart']['grand_total'] = number_format($_SESSION['shopping_ca
   var dg = new PAYPAL.apps.DGFlow(
       {
         trigger: 'paypal_submit',
-        //expType: 'instant'
+        expType: 'instant'
       });
 </script>
 </body>
