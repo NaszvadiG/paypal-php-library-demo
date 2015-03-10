@@ -1,4 +1,3 @@
 order deny,allow
 deny from all
-allow from 76.92.118.68
-allow from 192.168.1.1
+allow from 23.255.239.121
