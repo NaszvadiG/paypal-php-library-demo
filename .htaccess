@@ -1,4 +1,2 @@
 order deny,allow
-deny from all
-allow from 23.255.239.121
-allow from 68.207.220.90
+#deny from all
